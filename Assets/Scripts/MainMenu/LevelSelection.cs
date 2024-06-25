@@ -13,7 +13,7 @@ namespace MainMenu
             gameObject.SetActive(true);
             for (int i = 0; i < DataManager.Instance.Levels.Count; i++)
             {
-                levelIcons[i].Init(!DataManager.Instance.GetLevelDataByIndex(i).isPass);
+                levelIcons[i].Init(!DataManager.Instance.GetLevelDataByIndex(i).canTry);
             }
         }
     }

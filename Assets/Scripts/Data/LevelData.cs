@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Data
 {
@@ -8,7 +9,13 @@ namespace Data
         public string levelName;
         public float personaBest;
         public int tryTime;
-        public bool isPass;
+        [FormerlySerializedAs("isPass")] public bool canTry;
+        public int index;
         public int sceneId;
+
+        public void UpdatePB(float time)
+        {
+            personaBest = time < personaBest ? time : personaBest;
+        }
     }
 }

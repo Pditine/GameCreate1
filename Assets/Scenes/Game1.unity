@@ -960,6 +960,8 @@ MonoBehaviour:
   - {fileID: 1883040452}
   - {fileID: 1803482032}
   - {fileID: 206433110}
+  passPanel: {fileID: 1280630058}
+  timer: {fileID: 1048893208}
 --- !u!4 &1004610474
 Transform:
   m_ObjectHideFlags: 0
@@ -1304,13 +1306,14 @@ GameObject:
   - component: {fileID: 1280630055}
   - component: {fileID: 1280630057}
   - component: {fileID: 1280630056}
+  - component: {fileID: 1280630058}
   m_Layer: 5
   m_Name: PassPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1280630055
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1373,6 +1376,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1280630054}
   m_CullTransparentMesh: 1
+--- !u!114 &1280630058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280630054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc8c0b76c8b543c2a4b2663254d9b673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 2349978}
 --- !u!1 &1517244003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1537,8 +1553,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004610473}
-        m_TargetAssemblyTypeName: GamePlay.LevelManager, Assembly-CSharp
+      - m_Target: {fileID: 1280630058}
+        m_TargetAssemblyTypeName: GamePlay.PassPanel, Assembly-CSharp
         m_MethodName: BackToMain
         m_Mode: 1
         m_Arguments:
@@ -1931,8 +1947,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1004610473}
-        m_TargetAssemblyTypeName: GamePlay.LevelManager, Assembly-CSharp
+      - m_Target: {fileID: 1280630058}
+        m_TargetAssemblyTypeName: GamePlay.PassPanel, Assembly-CSharp
         m_MethodName: NextLevel
         m_Mode: 1
         m_Arguments:

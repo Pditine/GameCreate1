@@ -14,6 +14,7 @@ namespace Data
 
         public LevelData GetLevelDataByIndex(int index)
         {
+            if (index >= levels.Count||index<0) return null;
             return levels[index];
         }
     }
