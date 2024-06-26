@@ -7,7 +7,7 @@ namespace Data
     public class LevelData : ScriptableObject
     {
         public string levelName;
-        public float personaBest;
+        public float personaBest = float.PositiveInfinity;
         public int tryTime;
         [FormerlySerializedAs("isPass")] public bool canTry;
         public int index;

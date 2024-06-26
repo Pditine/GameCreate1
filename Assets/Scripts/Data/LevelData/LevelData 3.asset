@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: LevelData 3
   m_EditorClassIdentifier: 
   levelName: "\u5173\u53613"
-  personaBest: 0
+  personaBest: Infinity
   tryTime: 0
-  isPass: 0
+  canTry: 0
+  index: 2
   sceneId: 3

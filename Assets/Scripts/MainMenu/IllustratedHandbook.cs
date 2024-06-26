@@ -6,7 +6,7 @@ namespace MainMenu
     {
         public void Init()
         {
-            
+            gameObject.SetActive(true);
         }
     }
 }

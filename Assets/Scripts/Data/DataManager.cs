@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using PurpleFlowerCore.Utility;
 using UnityEngine;
 
@@ -8,6 +9,15 @@ namespace Data
     {
         [SerializeField] private List<LevelData> levels;
         [SerializeField]private PassingData passingData;
+
+        // private void Start()
+        // {
+        //     foreach (var levelData in levels)
+        //     {
+        //         levelData.personaBest = float.PositiveInfinity;
+        //     }
+        // }
+
         public List<LevelData> Levels => levels;
 
         public PassingData PassingData => passingData;
