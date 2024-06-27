@@ -32,7 +32,7 @@ namespace PurpleFlowerCore.Utility
             }
             else
             {
-                //Destroy(this);
+                //Destroy(gameObject);
                 PFCLog.Warning("单例重复挂载,物体:"+gameObject.name);
             }
         }

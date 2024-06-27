@@ -22,6 +22,11 @@ namespace PurpleFlowerCore
             SaveJsonModule.Save(fileName,data);
         }
 
+        public static void LoadOverwrite(string fileName,object data)
+        {
+            SaveJsonModule.LoadOverwrite(fileName,data);
+        }
+        
         public static T Load<T>(string fileName) where T: class
         {
             return SaveJsonModule.Load<T>(fileName);

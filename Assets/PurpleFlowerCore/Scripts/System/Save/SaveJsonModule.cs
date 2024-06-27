@@ -14,6 +14,13 @@ namespace PurpleFlowerCore.Save
             File.WriteAllText(GetPath(fileName), jsonStr);
         }
 
+        public void LoadOverwrite(string fileName,object data)
+        {
+            if (!CheckFile(fileName)) return;
+            var jsonStr = File.ReadAllText(GetPath(fileName));
+            JsonUtility.FromJsonOverwrite(jsonStr,data);
+        }
+        
         public T Load<T>(string fileName) where T: class
         {
             if (!CheckFile(fileName)) return null;

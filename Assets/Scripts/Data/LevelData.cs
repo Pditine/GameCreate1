@@ -1,15 +1,16 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace Data
 {
-    [CreateAssetMenu(menuName = "Data/LevelData",fileName = "LevelData")]
+    [CreateAssetMenu(menuName = "Data/LevelData",fileName = "LevelData")][Serializable]
     public class LevelData : ScriptableObject
     {
         public string levelName;
         public float personaBest = float.PositiveInfinity;
         public int tryTime;
-        [FormerlySerializedAs("isPass")] public bool canTry;
+        public bool canTry;
         public int index;
         public int sceneId;
 

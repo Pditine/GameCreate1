@@ -10,7 +10,7 @@ namespace GamePlay
         public void Init(float time)
         {
             gameObject.SetActive(true);
-            timeText.text = $"用时：{time:0:00}s";
+            timeText.text = $"用时：{time:0.00}s";
         }
         
         public void BackToMain()
