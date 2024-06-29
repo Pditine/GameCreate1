@@ -36,7 +36,8 @@ namespace GamePlay
         {
             if (_isGameOver) return;
             _currentTime += Time.deltaTime;
-            theText.text = $"用时：{_currentTime:0.00}s";
+            //theText.text = $"用时：{_currentTime:0.00}s";
+            theText.text = $"{_currentTime:0.00}s";
         }
     }
 }

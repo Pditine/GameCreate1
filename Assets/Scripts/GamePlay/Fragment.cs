@@ -6,7 +6,7 @@ namespace GamePlay
 {
     public class Fragment : MonoBehaviour,IDragHandler,IEndDragHandler
     {
-        [SerializeField] private Transform target;
+        public Transform target;
         [SerializeField] private float targetDistance = 30;
 
         private bool _isFixed;
