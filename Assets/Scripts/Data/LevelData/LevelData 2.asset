@@ -15,6 +15,6 @@ MonoBehaviour:
   levelName: "\u5173\u53612"
   personaBest: Infinity
   tryTime: 0
-  canTry: 1
+  canTry: 0
   index: 1
   sceneId: 2

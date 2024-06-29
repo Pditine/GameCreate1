@@ -25,6 +25,7 @@ namespace GamePlay
                 _isFixed = true;
                 transform.position = target.position;
                 LevelManager.Instance.CheckIntegrity();
+               // GetComponent<SpriteRenderer>().sortingOrder = -1;
             }
         }
     }
