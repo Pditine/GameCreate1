@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 
 namespace Data
 {
-    [CreateAssetMenu(menuName = "Data/LevelData",fileName = "LevelData")][Serializable]
+    [CreateAssetMenu(menuName = "Data/LevelData",fileName = "LevelData")]
     public class LevelData : ScriptableObject
     {
         public string levelName;

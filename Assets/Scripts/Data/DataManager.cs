@@ -9,8 +9,13 @@ namespace Data
     public class DataManager : DdolSingletonMono<DataManager>
     {
         [SerializeField] private List<LevelData> levels;
+        [SerializeField] private List<CulturalRelicData> culturalRelics;
         [SerializeField]private PassingData passingData;
 
+        public List<LevelData> Levels => levels;
+        public List<CulturalRelicData> CulturalRelics => culturalRelics;
+        public PassingData PassingData => passingData;
+        
         // private void Start()
         // {
         //     foreach (var levelData in levels)
@@ -25,12 +30,6 @@ namespace Data
             if(Instance == this)
                 LoadData();
         }
-        
-        
-
-        public List<LevelData> Levels => levels;
-
-        public PassingData PassingData => passingData;
 
         public LevelData GetLevelDataByIndex(int index)
         {
